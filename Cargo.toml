@@ -1,0 +1,17 @@
+[package]
+name = "async-tcl"
+version = "0.1.0"
+edition = "2021"
+description = "Integrate the Tcl/Tk event loop with smol"
+readme = "README.md"
+repository = "https://github.com/popapoe/async-tcl"
+
+[dependencies]
+async-executor = "1.5.1"
+async-io = "1.13.0"
+async-task = "4.4.0"
+futures-lite = "1.13.0"
+
+[lib]
+path = "src/lib.rs"
+crate-type = ["lib"]
